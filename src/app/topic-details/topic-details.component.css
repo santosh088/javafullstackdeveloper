@@ -1,0 +1,43 @@
+/* .water-image {
+    background-image: url("assets/images/water.png");
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+
+}
+.chia-image {
+    background-image: url("assets/images/chia.png");
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+
+} */
+/* .collapse {
+    &:not(.show) {
+      display: none;
+    }
+  }
+  
+  .collapsing {
+    height: 0;
+    overflow: hidden;
+    @include transition($transition-collapse);
+  } */
+
+  
+.mat-mdc-form-field + .mat-mdc-form-field {
+    margin-left: 8px;
+  }
+
+@media (max-width: 999px) {
+    .row{
+        margin-right:0px;
+    }
+    .col-12 {
+        margin-left: 30%;
+    }
+}

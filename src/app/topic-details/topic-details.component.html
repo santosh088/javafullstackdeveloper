@@ -1,0 +1,113 @@
+<head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4794221243459744"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+  </head>
+<div class="row" >
+    <div *ngIf="_diet.waterflag" class="col-12" >
+      <div id="accordion" style="margin-top: 2%;">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                1) What do you understand by OOP?
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              OOP stands for object-oriented programming. It is a programming paradigm that revolves around the object rather than function and procedure. In other words, it is an approach for developing applications that emphasize on objects. An object is a real word entity that contains data and code. It allows binding data and code together.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                2) What is the purpose of using OOPs concepts?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              The aim of OOP is to implement real-world entities like inheritance, hiding, polymorphism in programming. The main purpose of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                3) What are the four main features of OOPs?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              The OOP has the following four features:
+
+Inheritance
+Encapsulation
+Polymorphism
+Data Abstraction
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="_diet.breakfastflag" class="col-12" style="text-align: left;">
+        <p >
+            <br>
+            <a href="https://www.healthline.com/nutrition/9-benefits-oats-oatmeal">1. Oats</a>
+            <br>
+            <a href="https://food.ndtv.com/food-drinks/poha-health-benefits-6-reasons-this-indian-breakfast-food-is-great-for-you-1846130">2. Poha</a>
+        </p>
+    </div>
+    <div *ngIf="_diet.lunchflag" class="col-12" style="text-align: left;">
+        <p >
+            <br>
+            <a href="https://www.healthline.com/nutrition/healthy-lunch-ideas-for-weight-loss#diabetes-friendly">Lunch</a>
+            <br>
+        </p>
+    </div>
+    <div *ngIf="_diet.eveningflag" class="col-12" style="text-align: left;">
+        <p >
+            <br>
+            <a href="https://www.eatingwell.com/article/77540/the-10-best-snacks-for-weight-loss/">Snacks</a>
+            <br>
+        </p>
+    </div>
+    <div *ngIf="_diet.dinnerflag" class="col-12" style="text-align: left;">
+        <p >
+            <br>
+            <a href="https://www.eatingwell.com/gallery/7912783/easy-dinner-recipes-for-weight-loss-to-make-forever">Dinner</a>
+            <br>
+   
+        </p>
+    </div>
+    <div *ngIf="_diet.nightflag" class="col-12" style="text-align: left;">
+        <p >
+            <br>
+            1. Cinnamon tea
+            <br>
+            2.  Soaked fenugreek seed water
+            <br>
+            3. Coconut Water
+            <br>
+            4. Green tea
+            <br>
+            5. Apple cider vinegar drink
+        </p>
+    </div>
+</div>
