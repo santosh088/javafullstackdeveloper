@@ -26,6 +26,8 @@ color: white;
   }
   .list-group-item{
     padding: 5%;
+    text-wrap: wrap;
+    font-weight: 500;
   }
 
 
