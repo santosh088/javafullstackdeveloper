@@ -1,16 +1,31 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { DietService } from '../diet.service';
+import { style, transition, trigger,animate } from '@angular/animations';
 
 @Component({
   selector: 'app-java',
   templateUrl: './java.component.html',
-  styleUrls: ['./java.component.css']
+  styleUrls: ['./java.component.css'],
+  animations: [
+    trigger('slidein', [
+      transition(':enter', [
+        // when ngif has true
+        style({ transform: 'translateX(-100%)' }),
+        animate(250, style({ transform: 'translateX(0)' }))
+      ]),
+      transition(':leave', [
+        // when ngIf has false
+        animate(250, style({ transform: 'translateX(-100%)' }))
+      ])
+    ])
+  ]
 })
 
 export class WeightlossComponent implements OnInit {
 
   @Output() displayMessage:any;
   @Output() onSelected = new EventEmitter<any>();
+  expanded: boolean = true;
 
   constructor(private _diet:DietService) { 
   }
