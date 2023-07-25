@@ -38,6 +38,9 @@
         margin-right:0px;
     }
     .col-12 {
-        margin-left: 30%;
+        margin-left: 0%;
+    }
+    .btn.btn-link {
+        text-wrap: wrap;
     }
 }

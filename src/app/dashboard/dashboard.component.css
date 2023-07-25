@@ -237,7 +237,7 @@
 } */
 
 .image-dashbaord {
-    background-image: url("assets/images/desk_yoga.jpg");
+    background-image: url("assets/images/java_desk.jpg");
     height: 100%;
     width: 100%;
     margin: 0%;
@@ -247,7 +247,7 @@ background-position: center center;
 }
 @media (max-width: 999px) {
     .image-dashbaord {
-        background-image: url("assets/images/yoga.jpg");
+        background-image: url("assets/images/java.jpg");
         height: 100%;
         background-size: cover;
 background-position: center center;

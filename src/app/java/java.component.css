@@ -16,5 +16,17 @@ color: white;
   .col-3 {
     text-wrap: wrap;
   }
+  .list-group.text{
+
+    text-wrap: wrap;
+    margin-left: -20%;
+    margin-right: -20%;
+    margin-top: 0%;
+
+  }
+  .list-group-item{
+    padding: 5%;
+  }
+
 
 }
