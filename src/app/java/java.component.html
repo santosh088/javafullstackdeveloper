@@ -3,13 +3,13 @@
 <div class ="col-12" style="text-align: center;margin: 1%;"><strong >JAVA</strong>
 </div>
 <div class="row " style="height: 105%; min-height: 750px; overflow: auto;margin:0%;background-color:  lightgrey;">
-    <div class="col-4" style="height: auto;background-color: white;">
+    <div class="col-3" style="height: auto;background-color: white;">
         <ul class="list-group text" style="margin-top: 5%;">
-            <li *ngFor="let diet of diets" style="list-style-type:none">
+            <li *ngFor="let diet of diets" style="list-style-type:none;overflow-wrap: break-word;">
             <a class="list-group-item" (click)="selectDiet(diet.name)" style="font: bold">{{diet.name}}</a></li>
           </ul>
     </div>
-    <div class="col-8" style="height: auto;background-color: white;">
+    <div class="col-9" style="height: auto;background-color: white;">
 
     <app-topic-details></app-topic-details>
     </div>

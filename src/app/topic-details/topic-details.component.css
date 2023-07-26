@@ -39,6 +39,8 @@
     }
     .col-12 {
         margin-left: 0%;
+        font-size: small;
+        padding: 0%;
     }
     .btn.btn-link {
         text-wrap: wrap;
