@@ -27,10 +27,13 @@ export class WeightlossComponent implements OnInit {
   @Output() onSelected = new EventEmitter<any>();
   expanded: boolean = true;
 
+ 
+
   constructor(private _diet:DietService) { 
   }
 
   ngOnInit(): void {
+    this.selectDiet('OOPS');
   }
   diets = [
     { name: 'OOPS' },
