@@ -17,7 +17,6 @@ import { MatExpansionModule } from '@angular/material';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { AgmCoreModule } from '@agm/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -42,7 +41,6 @@ import { FormsModule } from '@angular/forms';
     NgImageSliderModule,
     MatExpansionModule,
     BrowserAnimationsModule,
-    PdfViewerModule,
     FormsModule,
     AgmCoreModule.forRoot({
       apiKey: ''
