@@ -5,8 +5,8 @@
 <div class="row " style="height: 105%; min-height: 750px; overflow: auto;margin:0%;background-color:  lightgrey;">
     <div class="col-3" style="height: auto;background-color: white;">
         <ul class="list-group text" style="margin-top: 5%;">
-            <li *ngFor="let diet of diets" style="list-style-type:none;overflow-wrap: break-word;">
-            <a class="list-group-item" (click)="selectDiet(diet.name)" style="font: bold">{{diet.name}}</a></li>
+            <li *ngFor="let topic of topics" style="list-style-type:none;overflow-wrap: break-word;">
+            <a class="list-group-item" (click)="selectTopic(topic.name)" style="font: bold">{{topic.name}}</a></li>
           </ul>
     </div>
     <div class="col-9" style="height: auto;background-color: white;">

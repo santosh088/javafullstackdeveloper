@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { DietService } from '../diet.service';
+import { TopicService } from '../topic.service';
 
 @Component({
   selector: 'app-topic-details',
@@ -14,7 +14,7 @@ export class DietDetailsComponent implements OnInit {
   public isCollapsed = false;  
   @Input() onSelected: any;
 
-  constructor(public _diet:DietService) { }
+  constructor(public _topic:TopicService) { }
 
   ngOnInit(): void {
   }

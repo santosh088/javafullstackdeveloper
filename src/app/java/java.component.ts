@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { DietService } from '../diet.service';
+import { TopicService } from '../topic.service';
 import { style, transition, trigger,animate } from '@angular/animations';
 
 @Component({
@@ -29,74 +29,75 @@ export class WeightlossComponent implements OnInit {
 
  
 
-  constructor(private _diet:DietService) { 
+  constructor(private _topic:TopicService) { 
   }
 
   ngOnInit(): void {
-    this.selectDiet('OOPS');
+    this.selectTopic('CORE JAVA');
   }
-  diets = [
-    { name: 'OOPS' },
-    { name: 'THREAD' },
+  topics = [
+    { name: 'CORE JAVA' },
+    { name: 'STRING' },
+    {  name: 'MULTITHREADING' },
     {  name: 'COLLECTION' },
-    {  name: 'EXCEPTION' },
-    {  name: 'JAVA 8' }
+    {  name: 'JAVA 8' },
+    {  name: 'BASIC PROGRAMMING' }
     ];
   
-  selectDiet(diet:any){
-    if(diet == 'OOPS'){
-      this._diet.images = "water-image";
-      this._diet.waterflag = true;
-      this._diet.breakfastflag = false;
-      this._diet.lunchflag = false;
-      this._diet.eveningflag = false;
-      this._diet.dinnerflag = false;
-      this._diet.nightflag = false;
+    selectTopic(topic:any){
+    if(topic == 'CORE JAVA'){
+      this._topic.images = "water-image";
+      this._topic.corejava = true;
+      this._topic.string = false;
+      this._topic.thread = false;
+      this._topic.collection = false;
+      this._topic.java8 = false;
+      this._topic.programming = false;
 
-    } else if(diet == 'BREAKFAST'){
-      this._diet.waterflag = false;
-      this._diet.breakfastflag = true;
-      this._diet.lunchflag = false;
-      this._diet.eveningflag = false;
-      this._diet.dinnerflag = false;
-      this._diet.nightflag = false;
-    } else if(diet == 'LUNCH'){
-      this._diet.waterflag = false;
-      this._diet.breakfastflag = false;
-      this._diet.lunchflag = true;
-      this._diet.eveningflag = false;
-      this._diet.dinnerflag = false;
-      this._diet.nightflag = false;
-    } else if(diet == 'EVENING SNACKS'){
-      this._diet.waterflag = false;
-      this._diet.breakfastflag = false;
-      this._diet.lunchflag = false;
-      this._diet.eveningflag = true;
-      this._diet.dinnerflag = false;
-      this._diet.nightflag = false;
-    } else if(diet == 'DINNER'){
-      this._diet.waterflag = false;
-      this._diet.breakfastflag = false;
-      this._diet.lunchflag = false;
-      this._diet.eveningflag = false;
-      this._diet.dinnerflag = true;
-      this._diet.nightflag = false;
+    } else if(topic == 'STRING'){
+      this._topic.corejava = false;
+      this._topic.string = true;
+      this._topic.thread = false;
+      this._topic.collection = false;
+      this._topic.java8 = false;
+      this._topic.programming = false;
+    } else if(topic == 'COLLECTION'){
+      this._topic.corejava = false;
+      this._topic.string = false;
+      this._topic.thread = false;
+      this._topic.collection = true;
+      this._topic.java8 = false;
+      this._topic.programming = false;
+    } else if(topic == 'MULTITHREADING'){
+      this._topic.corejava = false;
+      this._topic.string = false;
+      this._topic.thread = true;
+      this._topic.collection = false;
+      this._topic.java8 = false;
+      this._topic.programming = false;
+    } else if(topic == 'JAVA 8'){
+      this._topic.corejava = false;
+      this._topic.string = false;
+      this._topic.thread = false;
+      this._topic.collection = false;
+      this._topic.java8 = true;
+      this._topic.programming = false;
     }
-   else if(diet == 'NIGHT DRINK'){
-    this._diet.waterflag = false;
-    this._diet.breakfastflag = false;
-    this._diet.lunchflag = false;
-    this._diet.eveningflag = false;
-    this._diet.dinnerflag = false;
-    this._diet.nightflag = true;
+   else if(topic == 'BASIC PROGRAMMING'){
+    this._topic.corejava = false;
+    this._topic.string = false;
+    this._topic.thread = false;
+    this._topic.collection = false;
+    this._topic.java8 = false;
+    this._topic.programming = true;
    }
    else {
-    this._diet.waterflag = false;
-    this._diet.breakfastflag = false;
-    this._diet.lunchflag = false;
-    this._diet.eveningflag = false;
-    this._diet.dinnerflag = false;
-    this._diet.nightflag = false;
+    this._topic.corejava = false;
+    this._topic.string = false;
+    this._topic.thread = false;
+    this._topic.collection = false;
+    this._topic.java8 = false;
+    this._topic.programming = false;
    }
 }
 
