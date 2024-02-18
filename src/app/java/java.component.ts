@@ -41,7 +41,10 @@ export class WeightlossComponent implements OnInit {
     {  name: 'MULTITHREADING' },
     {  name: 'COLLECTION' },
     {  name: 'JAVA 8' },
-    {  name: 'BASIC PROGRAMMING' }
+    {  name: 'BASIC PROGRAMMING' },
+    {  name: 'Angular' },
+    {  name: 'Design Pattern' },
+    {  name: 'INTERVIEW QnA' }
     ];
   
     selectTopic(topic:any){
@@ -53,6 +56,7 @@ export class WeightlossComponent implements OnInit {
       this._topic.collection = false;
       this._topic.java8 = false;
       this._topic.programming = false;
+      this._topic.QnA = false;
 
     } else if(topic == 'STRING'){
       this._topic.corejava = false;
@@ -61,6 +65,7 @@ export class WeightlossComponent implements OnInit {
       this._topic.collection = false;
       this._topic.java8 = false;
       this._topic.programming = false;
+      this._topic.QnA = false;
     } else if(topic == 'COLLECTION'){
       this._topic.corejava = false;
       this._topic.string = false;
@@ -68,6 +73,7 @@ export class WeightlossComponent implements OnInit {
       this._topic.collection = true;
       this._topic.java8 = false;
       this._topic.programming = false;
+      this._topic.QnA = false;
     } else if(topic == 'MULTITHREADING'){
       this._topic.corejava = false;
       this._topic.string = false;
@@ -75,6 +81,7 @@ export class WeightlossComponent implements OnInit {
       this._topic.collection = false;
       this._topic.java8 = false;
       this._topic.programming = false;
+      this._topic.QnA = false;
     } else if(topic == 'JAVA 8'){
       this._topic.corejava = false;
       this._topic.string = false;
@@ -82,6 +89,7 @@ export class WeightlossComponent implements OnInit {
       this._topic.collection = false;
       this._topic.java8 = true;
       this._topic.programming = false;
+      this._topic.QnA = false;
     }
    else if(topic == 'BASIC PROGRAMMING'){
     this._topic.corejava = false;
@@ -90,6 +98,38 @@ export class WeightlossComponent implements OnInit {
     this._topic.collection = false;
     this._topic.java8 = false;
     this._topic.programming = true;
+    this._topic.QnA = false;
+   }
+   else if(topic == 'INTERVIEW QnA'){
+    this._topic.corejava = false;
+    this._topic.string = false;
+    this._topic.thread = false;
+    this._topic.collection = false;
+    this._topic.java8 = false;
+    this._topic.programming = false;
+    this._topic.QnA = true;
+   }
+   else if(topic == 'Angular'){
+    this._topic.corejava = false;
+    this._topic.string = false;
+    this._topic.thread = false;
+    this._topic.collection = false;
+    this._topic.java8 = false;
+    this._topic.programming = false;
+    this._topic.QnA = false;
+    this._topic.angular = true;
+    this._topic.design = false;
+   }
+   else if(topic == 'Design Pattern'){
+    this._topic.corejava = false;
+    this._topic.string = false;
+    this._topic.thread = false;
+    this._topic.collection = false;
+    this._topic.java8 = false;
+    this._topic.programming = false;
+    this._topic.QnA = false;
+    this._topic.angular = false;
+    this._topic.design = true;
    }
    else {
     this._topic.corejava = false;
@@ -98,6 +138,7 @@ export class WeightlossComponent implements OnInit {
     this._topic.collection = false;
     this._topic.java8 = false;
     this._topic.programming = false;
+    this._topic.QnA = false;
    }
 }
 

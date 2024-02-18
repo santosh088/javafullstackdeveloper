@@ -23,5 +23,11 @@ export class TopicService {
 
   public programming = false; 
 
+  public QnA = false;
+
+  public angular = false;
+
+  public design = false;
+
   publicstatus : boolean = false;
 }
