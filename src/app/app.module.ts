@@ -18,6 +18,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import { AgmCoreModule } from '@agm/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { NgxDocViewerModule } from 'ngx-doc-viewer';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { FormsModule } from '@angular/forms';
     MatExpansionModule,
     BrowserAnimationsModule,
     FormsModule,
+    PdfViewerModule,
+    NgxDocViewerModule,
     AgmCoreModule.forRoot({
       apiKey: ''
     })

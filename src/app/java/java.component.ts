@@ -26,6 +26,10 @@ export class WeightlossComponent implements OnInit {
   @Output() displayMessage:any;
   @Output() onSelected = new EventEmitter<any>();
   expanded: boolean = true;
+  colValue1 = "col-3";
+  colValue2 = "col-9";
+  flag1 = true
+  falg2 = false;
 
  
 
@@ -141,5 +145,6 @@ export class WeightlossComponent implements OnInit {
     this._topic.QnA = false;
    }
 }
+
 
 }
